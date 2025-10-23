@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: overhead mountain removal -->
+  <RTR_OverheadMountainRemoval.label>overhead mountain removal</RTR_OverheadMountainRemoval.label>
+  <!-- EN: Build the tools needed for industrial scale natural formation removal. -->
+  <RTR_OverheadMountainRemoval.description>Build the tools needed for industrial scale natural formation removal.</RTR_OverheadMountainRemoval.description>
+  <!-- EN: solar roofing -->
+  <RTR_SolarRoofing.label>solar roofing</RTR_SolarRoofing.label>
+  <!-- EN: Build steel roofing with integrated solar arrays for generating power. -->
+  <RTR_SolarRoofing.description>Build steel roofing with integrated solar arrays for generating power.</RTR_SolarRoofing.description>
+  <!-- EN: transparent roofing -->
+  <RTR_TransparentRoofing.label>transparent roofing</RTR_TransparentRoofing.label>
+  <!-- EN: Build transparent steel roofing, ideal for growing indoor gardens. -->
+  <RTR_TransparentRoofing.description>Build transparent steel roofing, ideal for growing indoor gardens.</RTR_TransparentRoofing.description>
+  <!-- EN: transparent solar roofing -->
+  <RTR_TransparentSolarRoofing.label>transparent solar roofing</RTR_TransparentSolarRoofing.label>
+  <!-- EN: Build transparent steel roofing with integrated solar arrays. Grow your crops while your roof passively generates power. -->
+  <RTR_TransparentSolarRoofing.description>Build transparent steel roofing with integrated solar arrays. Grow your crops while your roof passively generates power.</RTR_TransparentSolarRoofing.description>
+</LanguageData>

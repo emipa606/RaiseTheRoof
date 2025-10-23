@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RTR.AutoRoom>Automatically construct roof when room is built</RTR.AutoRoom>
+  <RTR.Infestations>Allow infestations to spawn under the new roofs</RTR.Infestations>
+  <RTR.Mountains>Remove mountainous roofs enabled</RTR.Mountains>
+  <RTR.SteelRoof>Steel roofs enabled</RTR.SteelRoof>
+  <RTR.TransparentRoof>Transparent roofs enabled</RTR.TransparentRoof>
+  <RTR.SolarRoof>Solar roofs enabled</RTR.SolarRoof>
+  <RTR.TransparentSolarRoof>Transparent solar roofs enabled</RTR.TransparentSolarRoof>
+  <RTR.Misc>Misc</RTR.Misc>
+  <RTR.SolarOutput>Solar roof power output</RTR.SolarOutput>
+  <RTR.PowerUnit>{0} W</RTR.PowerUnit>
+  <RTR.ChunkChance>Chunk mined from overhead mountain removal chance</RTR.ChunkChance>
+  <RTR.PowerOutput>{0} (Power output: {1} W)</RTR.PowerOutput>
+  <RTR.General>General</RTR.General>
+  <RTR.Settings>Settings</RTR.Settings>
+  <RTR.ResetSettings>Restore default settings</RTR.ResetSettings>
+  <RTR.Reset>Reset</RTR.Reset>
+  <RTR.SteelCost>Steel roof material costs</RTR.SteelCost>
+  <RTR.TransparentCost>Transparent roof material costs</RTR.TransparentCost>
+  <RTR.SolarCost>Solar roof material costs</RTR.SolarCost>
+  <RTR.TransparentSolarCost>Transparent solar roof material costs</RTR.TransparentSolarCost>
+  <RTR.Steel>Steel</RTR.Steel>
+  <RTR.Synthread>Synthread</RTR.Synthread>
+  <RTR.Components>Components</RTR.Components>
+  <RTR.ModVersion>Installed mod-version: {0}</RTR.ModVersion>
+</LanguageData>

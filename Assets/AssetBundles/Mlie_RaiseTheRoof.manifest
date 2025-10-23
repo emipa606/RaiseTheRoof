@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 1175428518
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cf3a3f1cb3f8863e63814ebc19f0da7a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: cf3a3f1cb3f8863e63814ebc19f0da7a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/RemoveTransparentRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/RemoveTransparentSolarRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/RemoveMountainousRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/BuildSolarRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/RemoveSolarRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/BuildSteelRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/BuildTransparentSolarRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/BuildTransparentRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/RemoveSteelRoofArea.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/DeconstructRoof.png
+- Assets/Data/Mlie.RaiseTheRoof/Textures/RTR/SolarPowerCell.png
+Dependencies: []

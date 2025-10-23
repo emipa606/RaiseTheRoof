@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: constructed solar roof -->
+  <RTR_RoofSolar.label>constructed solar roof</RTR_RoofSolar.label>
+  <!-- EN: constructed steel roof -->
+  <RTR_RoofSteel.label>constructed steel roof</RTR_RoofSteel.label>
+  <!-- EN: constructed transparent roof -->
+  <RTR_RoofTransparent.label>constructed transparent roof</RTR_RoofTransparent.label>
+  <!-- EN: constructed transparent solar roof -->
+  <RTR_RoofTransparentSolar.label>constructed transparent solar roof</RTR_RoofTransparentSolar.label>
+</LanguageData>

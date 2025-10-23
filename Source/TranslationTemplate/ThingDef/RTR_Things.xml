@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: remove overhead mountain -->
+  <RTR_RemoveMountainousRoof.label>remove overhead mountain</RTR_RemoveMountainousRoof.label>
+  <!-- EN: remove constructed solar roof -->
+  <RTR_RemoveSolarRoof.label>remove constructed solar roof</RTR_RemoveSolarRoof.label>
+  <!-- EN: remove constructed steel roof -->
+  <RTR_RemoveSteelRoof.label>remove constructed steel roof</RTR_RemoveSteelRoof.label>
+  <!-- EN: remove constructed transparent roof -->
+  <RTR_RemoveTransparentRoof.label>remove constructed transparent roof</RTR_RemoveTransparentRoof.label>
+  <!-- EN: remove constructed transparent solar roof -->
+  <RTR_RemoveTransparentSolarRoof.label>remove constructed transparent solar roof</RTR_RemoveTransparentSolarRoof.label>
+  <!-- EN: solar array -->
+  <RTR_SolarArray.label>solar array</RTR_SolarArray.label>
+  <!-- EN: constructed solar roof -->
+  <RTR_SolarRoof.label>constructed solar roof</RTR_SolarRoof.label>
+  <!-- EN: Provides a thick steel roofing with built in solar arrays to generate power. -->
+  <RTR_SolarRoof.description>Provides a thick steel roofing with built in solar arrays to generate power.</RTR_SolarRoof.description>
+  <!-- EN: constructed steel roof -->
+  <RTR_SteelRoof.label>constructed steel roof</RTR_SteelRoof.label>
+  <!-- EN: Provides a thick steel roofing to keep drop pods out. -->
+  <RTR_SteelRoof.description>Provides a thick steel roofing to keep drop pods out.</RTR_SteelRoof.description>
+  <!-- EN: constructed transparent roof -->
+  <RTR_TransparentRoof.label>constructed transparent roof</RTR_TransparentRoof.label>
+  <!-- EN: Provides a thick transparent steel roofing, ideal for growing gardens indoor. -->
+  <RTR_TransparentRoof.description>Provides a thick transparent steel roofing, ideal for growing gardens indoor.</RTR_TransparentRoof.description>
+  <!-- EN: constructed transparent solar roof -->
+  <RTR_TransparentSolarRoof.label>constructed transparent solar roof</RTR_TransparentSolarRoof.label>
+  <!-- EN: Provides the very best roofing available. Strong transparent steel with built in solar arrays to generate power. -->
+  <RTR_TransparentSolarRoof.description>Provides the very best roofing available. Strong transparent steel with built in solar arrays to generate power.</RTR_TransparentSolarRoof.description>
+</LanguageData>
