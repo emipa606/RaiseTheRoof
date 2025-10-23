@@ -1,5 +1,8 @@
 # Changelog for RaiseTheRoof
 
+1.6.1 - Missing version tag on preview
+
+
 1.6.0 - First publish
 Used DeepL to update translations for ChineseSimplified, French, German
 
