@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RB_Glass"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RTR_TransparentRoof"]/costList</xpath>
+          <value>
+            <costList>
+              <Steel>50</Steel>
+              <RB_Glass>10</RB_Glass>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RTR_TransparentSolarRoof"]/costList</xpath>
+          <value>
+            <costList>
+              <Steel>50</Steel>
+              <RB_Glass>10</RB_Glass>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

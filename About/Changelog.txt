@@ -1,5 +1,8 @@
 # Changelog for RaiseTheRoof
 
+1.6.3 - Added compatibility with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3262718980]ReBuild: Doors and Corners[/url], thanks MrMatsay
+
+
 1.6.2 - Added support for any mod that uses the Sanguophage utility to check if the pawn is in sunlight
 
 

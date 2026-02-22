@@ -85,7 +85,7 @@ public class RTRUtils
                         item3.count = RaiseTheRoofMod.settings.transparentRoofSteelCost;
                     }
 
-                    if (item3.thingDef == ThingDef.Named("Synthread") || item3.thingDef == ThingDef.Named("RB_Glass"))
+                    if (item3.thingDef.defName is "Synthread" or "RB_Glass")
                     {
                         item3.count = RaiseTheRoofMod.settings.transparentRoofSynthreadCost;
                     }
@@ -122,7 +122,7 @@ public class RTRUtils
                         item5.count = RaiseTheRoofMod.settings.transparentSolarRoofSteelCost;
                     }
 
-                    if (item5.thingDef == ThingDef.Named("Synthread") || item5.thingDef == ThingDef.Named("RB_Glass"))
+                    if (item5.thingDef.defName is "Synthread" or "RB_Glass")
                     {
                         item5.count = RaiseTheRoofMod.settings.transparentSolarRoofSynthreadCost;
                     }
