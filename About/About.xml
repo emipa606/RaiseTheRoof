@@ -21,6 +21,7 @@
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>
+    <li>rebuild.cotr.doorsandcorners</li>
   </loadAfter>
   <description>[img]https://img.litet.net/logos/Info.png[/img]
 Update of Machines mod https://steamcommunity.com/sharedfiles/filedetails/?id=1776143665

@@ -23,6 +23,7 @@
   <RTR.TransparentSolarCost>Materialkosten für transparente Solardächer</RTR.TransparentSolarCost>
   <RTR.Steel>Stahl</RTR.Steel>
   <RTR.Synthread>Synthread</RTR.Synthread>
+  <RTR.Glass>Glas</RTR.Glass>
   <RTR.Components>Bestandteile</RTR.Components>
   <RTR.ModVersion>Installierte Mod-Version: {0}</RTR.ModVersion>
 </LanguageData>

@@ -162,7 +162,8 @@ public class RaiseTheRoofMod : Mod
         var rect26 = new Rect(inRect.position.x + 448f, inRect.position.y + 192f, (inRect.width / 2f) - 20f,
             inRect.height - 560f);
         settings.transparentRoofSynthreadCost = (int)Widgets.HorizontalSlider(rect26,
-            settings.transparentRoofSynthreadCost, 1f, 100f, false, null, "RTR.Synthread".Translate(),
+            settings.transparentRoofSynthreadCost, 1f, 100f, false, null,
+            ModsConfig.IsActive("rebuild.cotr.doorsandcorners") ? "RTR.Glass".Translate() : "RTR.Synthread".Translate(),
             settings.transparentRoofSynthreadCost.ToString());
         var position6 = new Rect(inRect.position.x + 440f, inRect.position.y + 240f, (inRect.width / 2f) - 8f,
             inRect.height - 560f);
@@ -192,7 +193,8 @@ public class RaiseTheRoofMod : Mod
         var rect32 = new Rect(inRect.position.x + 448f, inRect.position.y + 448f, (inRect.width / 2f) - 20f,
             inRect.height - 560f);
         settings.transparentSolarRoofSynthreadCost = (int)Widgets.HorizontalSlider(rect32,
-            settings.transparentSolarRoofSynthreadCost, 1f, 100f, false, null, "RTR.Synthread".Translate(),
+            settings.transparentSolarRoofSynthreadCost, 1f, 100f, false, null,
+            ModsConfig.IsActive("rebuild.cotr.doorsandcorners") ? "RTR.Glass".Translate() : "RTR.Synthread".Translate(),
             settings.transparentSolarRoofSynthreadCost.ToString());
         var rect33 = new Rect(inRect.position.x + 448f, inRect.position.y + 480f, (inRect.width / 2f) - 20f,
             inRect.height - 560f);

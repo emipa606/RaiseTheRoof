@@ -22,6 +22,7 @@
   <RTR.TransparentSolarCost>Transparent solar roof material costs</RTR.TransparentSolarCost>
   <RTR.Steel>Steel</RTR.Steel>
   <RTR.Synthread>Synthread</RTR.Synthread>
+  <RTR.Glass>Glass</RTR.Glass>
   <RTR.Components>Components</RTR.Components>
   <RTR.ModVersion>Installed mod-version: {0}</RTR.ModVersion>
 </LanguageData>

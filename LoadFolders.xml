@@ -24,5 +24,6 @@
     <li>/</li>
     <li>1.6</li>
     <li>Assets</li>
+    <li IfModActive="rebuild.cotr.doorsandcorners">1.6/Mods/ReBuild</li>
   </v1.6>
 </loadFolders>

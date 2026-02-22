@@ -23,6 +23,7 @@
   <RTR.TransparentSolarCost>Coût des matériaux pour les toits solaires transparents</RTR.TransparentSolarCost>
   <RTR.Steel>Acier</RTR.Steel>
   <RTR.Synthread>Synthread</RTR.Synthread>
+  <RTR.Glass>Verre</RTR.Glass>
   <RTR.Components>Composants</RTR.Components>
   <RTR.ModVersion>Version installée du mod : {0}</RTR.ModVersion>
 </LanguageData>

@@ -23,6 +23,7 @@
   <RTR.TransparentSolarCost>透明太阳能屋顶材料成本</RTR.TransparentSolarCost>
   <RTR.Steel>钢铁</RTR.Steel>
   <RTR.Synthread>合成线程</RTR.Synthread>
+  <RTR.Glass>玻璃</RTR.Glass>
   <RTR.Components>组件</RTR.Components>
   <RTR.ModVersion>已安装 MOD 版本：{0}</RTR.ModVersion>
 </LanguageData>
