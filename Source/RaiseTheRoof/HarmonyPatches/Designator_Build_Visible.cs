@@ -17,7 +17,7 @@ public static class Designator_Build_Visible
         return (BuildableDef)FI_entDef.GetValue(instance);
     }
 
-    private static bool Prefix(Designator_Build __instance, ref bool __result)
+    public static bool Prefix(Designator_Build __instance, ref bool __result)
     {
         if (entDef(__instance) == RaiseTheRoofDefOf.RTR_SolarArray)
         {

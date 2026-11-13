@@ -38,7 +38,7 @@ public static class Designator_AreaNoRoof_CanDesignateCell
         return roofDef == RimWorld.RoofDefOf.RoofConstructed;
     }
 
-    private static bool Prefix(Designator_AreaNoRoof __instance, ref AcceptanceReport __result, IntVec3 c)
+    public static bool Prefix(Designator_AreaNoRoof __instance, ref AcceptanceReport __result, IntVec3 c)
     {
         __result = canDesignateCell(__instance, c);
         return false;

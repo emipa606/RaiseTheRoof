@@ -14,7 +14,7 @@ public static class GenConstruct_CanConstruct
                RoofCollapseUtility.ConnectedToRoofHolder(b.Position, b.Map, true);
     }
 
-    private static void Postfix(ref bool __result, Thing t)
+    public static void Postfix(ref bool __result, Thing t)
     {
         if (__result && t is Building building && RTRUtils.RoofFrameOrBlueprintExists(building))
         {

@@ -1,11 +1,12 @@
 using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.AI;
 
 namespace RaiseTheRoof;
 
-public class RTRUtils
+public static class RTRUtils
 {
     private static ThingDef GetRoofThingDef(RoofDef roofDef)
     {
@@ -143,139 +144,139 @@ public class RTRUtils
             return false;
         }
 
-        foreach (var thing in things)
+        foreach (var thingDef in things.Select(t => t.def))
         {
-            if (thing.def == RaiseTheRoofDefOf.RTR_SteelRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_SteelRoof)
             {
                 return true;
             }
 
-            if (thing.def == RaiseTheRoofDefOf.RTR_TransparentRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_TransparentRoof)
             {
                 return true;
             }
 
-            if (thing.def == RaiseTheRoofDefOf.RTR_SolarRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_SolarRoof)
             {
                 return true;
             }
 
-            if (thing.def == RaiseTheRoofDefOf.RTR_TransparentSolarRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_TransparentSolarRoof)
             {
                 return true;
             }
 
-            if (thing.def == RaiseTheRoofDefOf.RTR_RemoveSteelRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_RemoveSteelRoof)
             {
                 return true;
             }
 
-            if (thing.def == RaiseTheRoofDefOf.RTR_RemoveTransparentRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_RemoveTransparentRoof)
             {
                 return true;
             }
 
-            if (thing.def == RaiseTheRoofDefOf.RTR_RemoveSolarRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_RemoveSolarRoof)
             {
                 return true;
             }
 
-            if (thing.def == RaiseTheRoofDefOf.RTR_RemoveTransparentSolarRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_RemoveTransparentSolarRoof)
             {
                 return true;
             }
 
-            if (thing.def == RaiseTheRoofDefOf.RTR_RemoveMountainousRoof)
+            if (thingDef == RaiseTheRoofDefOf.RTR_RemoveMountainousRoof)
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_SteelRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_SteelRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_TransparentRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_TransparentRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_SolarRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_SolarRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_TransparentSolarRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_TransparentSolarRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_RemoveSteelRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_RemoveSteelRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_RemoveTransparentRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_RemoveTransparentRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_RemoveSolarRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_RemoveSolarRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_RemoveTransparentSolarRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_RemoveTransparentSolarRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Blueprint_RTR_RemoveMountainousRoof"))
+            if (thingDef == ThingDef.Named("Blueprint_RTR_RemoveMountainousRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_SteelRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_SteelRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_TransparentRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_TransparentRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_SolarRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_SolarRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_TransparentSolarRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_TransparentSolarRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_RemoveSteelRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_RemoveSteelRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_RemoveTransparentRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_RemoveTransparentRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_RemoveSolarRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_RemoveSolarRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_RemoveTransparentSolarRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_RemoveTransparentSolarRoof"))
             {
                 return true;
             }
 
-            if (thing.def == ThingDef.Named("Frame_RTR_RemoveMountainousRoof"))
+            if (thingDef == ThingDef.Named("Frame_RTR_RemoveMountainousRoof"))
             {
                 return true;
             }

@@ -55,7 +55,7 @@ public static class RoofGrid_GetCellExtraColor
             : Color.white;
     }
 
-    private static bool Prefix(RoofGrid __instance, ref Color __result, int index)
+    public static bool Prefix(RoofGrid __instance, ref Color __result, int index)
     {
         __result = GetCellExtraColor(__instance, index);
         return false;

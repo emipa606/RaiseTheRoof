@@ -1,5 +1,8 @@
 # Changelog for RaiseTheRoof
 
+1.7.0 - Mod updated for 1.7 and passed autotests
+
+
 1.6.3 - Added compatibility with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3262718980]ReBuild: Doors and Corners[/url], thanks MrMatsay
 
 

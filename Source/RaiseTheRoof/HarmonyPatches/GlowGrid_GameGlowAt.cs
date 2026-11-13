@@ -25,7 +25,7 @@ public static class GlowGrid_GameGlowAt
 
     private static Color32 getAccumulatedGlowAt(GlowGrid instance, IntVec3 c, bool ignoreCavePlants)
     {
-        return (Color32)miGetAccumulatedGlowAt.Invoke(instance, [c, ignoreCavePlants]);
+        return (Color32)(miGetAccumulatedGlowAt.Invoke(instance, [c, ignoreCavePlants]) ?? new Color32());
     }
 
     private static float groundGlowAt(GlowGrid instance, IntVec3 c, bool ignoreCavePlants = false,
@@ -54,7 +54,7 @@ public static class GlowGrid_GameGlowAt
         return Mathf.Max(num, b);
     }
 
-    private static bool Prefix(ref GlowGrid __instance, ref float __result, ref IntVec3 c,
+    public static bool Prefix(ref GlowGrid __instance, ref float __result, ref IntVec3 c,
         bool ignoreCavePlants = false)
     {
         __result = groundGlowAt(__instance, c, ignoreCavePlants);

@@ -7,7 +7,7 @@ namespace RaiseTheRoof;
 [HarmonyPatch(typeof(Thing), nameof(Thing.LabelCap), MethodType.Getter)]
 public static class Thing_LabelCap
 {
-    private static bool Prefix(ref string __result, Thing __instance)
+    public static bool Prefix(ref string __result, Thing __instance)
     {
         if (__instance == null || __instance.def != RaiseTheRoofDefOf.RTR_SolarArray)
         {

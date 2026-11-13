@@ -1,3 +1,4 @@
+using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -30,13 +31,10 @@ public class PlaceWorker_BuildRoof : PlaceWorker
 
     public override void PostPlace(Map map, BuildableDef def, IntVec3 loc, Rot4 rot)
     {
-        foreach (var item in map.thingGrid.ThingsAt(loc))
+        foreach (var item in map.thingGrid.ThingsAt(loc).Where(item => item.def.plant is { interferesWithRoof: true }))
         {
-            if (item.def.plant is { interferesWithRoof: true })
-            {
-                Messages.Message("MessageRoofIncompatibleWithPlant".Translate(item), MessageTypeDefOf.CautionInput,
-                    false);
-            }
+            Messages.Message("MessageRoofIncompatibleWithPlant".Translate(item), MessageTypeDefOf.CautionInput,
+                false);
         }
     }
 

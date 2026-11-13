@@ -16,7 +16,7 @@ public static class RoofGrid_SetRoof
         return (Map)fiMap.GetValue(instance);
     }
 
-    private static void Postfix(RoofGrid __instance, IntVec3 c, RoofDef def)
+    public static void Postfix(RoofGrid __instance, IntVec3 c, RoofDef def)
     {
         if (def != null)
         {

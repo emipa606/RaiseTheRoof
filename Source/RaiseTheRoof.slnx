@@ -6,4 +6,22 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="RaiseTheRoof/RaiseTheRoof.csproj" />
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/Patches.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ResearchProjectDefs/">
+    <File Path="../1.7/Defs/ResearchProjectDefs/RTR_ResearchProjects.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/RoofDefs/">
+    <File Path="../1.7/Defs/RoofDefs/RTR_Roofs.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Text.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs/">
+    <File Path="../1.7/Defs/ThingDefs/RTR_Things.xml" />
+  </Folder>
 </Solution>

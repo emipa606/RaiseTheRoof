@@ -19,7 +19,7 @@ public static class JobDriver_RemoveRoof_DoEffect
 
     private static IntVec3 cell(JobDriver_AffectRoof instance)
     {
-        return (IntVec3)piCell.GetValue(instance, null);
+        return (IntVec3)(piCell.GetValue(instance, null) ?? IntVec3.Zero);
     }
 
     private static Map map(JobDriver instance)
@@ -27,7 +27,7 @@ public static class JobDriver_RemoveRoof_DoEffect
         return (Map)piMap.GetValue(instance, null);
     }
 
-    private static void Postfix(JobDriver_RemoveRoof __instance)
+    public static void Postfix(JobDriver_RemoveRoof __instance)
     {
         map(__instance).areaManager.NoRoof[cell(__instance)] = false;
     }

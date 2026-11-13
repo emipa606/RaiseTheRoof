@@ -27,7 +27,7 @@ public static class InfestationCellFinder_GetScoreAt
         return cell.GetRoof(map) != RoofDefOf.RTR_RoofTransparentSolar;
     }
 
-    private static void Postfix(ref float __result, IntVec3 cell, Map map)
+    public static void Postfix(ref float __result, IntVec3 cell, Map map)
     {
         if (RaiseTheRoofMod.settings != null && !RaiseTheRoofMod.settings.allowInfestations &&
             !canSpawnAt(cell, map))

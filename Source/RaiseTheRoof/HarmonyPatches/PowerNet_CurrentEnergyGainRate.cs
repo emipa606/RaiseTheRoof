@@ -8,7 +8,7 @@ namespace RaiseTheRoof;
 [HarmonyPatch(typeof(PowerNet), nameof(PowerNet.CurrentEnergyGainRate))]
 public static class PowerNet_CurrentEnergyGainRate
 {
-    private static bool Prefix(PowerNet __instance, ref float __result)
+    public static bool Prefix(PowerNet __instance, ref float __result)
     {
         if (DebugSettings.unlimitedPower)
         {

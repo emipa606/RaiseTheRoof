@@ -19,7 +19,7 @@ public static class JobDriver_BuildRoof_DoEffect
 
     private static IntVec3 cell(JobDriver_AffectRoof instance)
     {
-        return (IntVec3)piCell.GetValue(instance, null);
+        return (IntVec3)(piCell.GetValue(instance, null) ?? IntVec3.Zero);
     }
 
     private static Map map(JobDriver instance)
@@ -27,7 +27,7 @@ public static class JobDriver_BuildRoof_DoEffect
         return (Map)piMap.GetValue(instance, null);
     }
 
-    private static bool Prefix(JobDriver_BuildRoof __instance)
+    public static bool Prefix(JobDriver_BuildRoof __instance)
     {
         for (var i = 0; i < 9; i++)
         {

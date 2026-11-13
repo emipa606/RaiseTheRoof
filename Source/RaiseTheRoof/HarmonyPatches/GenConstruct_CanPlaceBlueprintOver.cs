@@ -7,7 +7,7 @@ namespace RaiseTheRoof;
 [HarmonyPatch(typeof(GenConstruct), nameof(GenConstruct.CanPlaceBlueprintOver))]
 public static class GenConstruct_CanPlaceBlueprintOver
 {
-    private static bool Prefix(ref bool __result, BuildableDef newDef)
+    public static bool Prefix(ref bool __result, BuildableDef newDef)
     {
         if (!newDef.ToString().StartsWith("RTR_"))
         {

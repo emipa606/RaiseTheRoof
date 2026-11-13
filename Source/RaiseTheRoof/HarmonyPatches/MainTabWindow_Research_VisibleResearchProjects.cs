@@ -43,7 +43,7 @@ public static class MainTabWindow_Research_VisibleResearchProjects
                def == RaiseTheRoofDefOf.RTR_TransparentSolarRoofing;
     }
 
-    private static bool Prefix(MainTabWindow_Research __instance, ref List<ResearchProjectDef> __result)
+    public static bool Prefix(MainTabWindow_Research __instance, ref List<ResearchProjectDef> __result)
     {
         if (cachedVisibleResearchProjects(__instance) == null)
         {

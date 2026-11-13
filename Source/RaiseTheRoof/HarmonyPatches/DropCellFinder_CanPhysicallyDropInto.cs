@@ -27,7 +27,7 @@ public static class DropCellFinder_CanPhysicallyDropInto
         return cell.GetRoof(map) != RoofDefOf.RTR_RoofTransparentSolar;
     }
 
-    private static void Postfix(ref bool __result, IntVec3 c, Map map)
+    public static void Postfix(ref bool __result, IntVec3 c, Map map)
     {
         if (!canDropInto(c, map))
         {

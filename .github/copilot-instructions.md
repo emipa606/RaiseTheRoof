@@ -1,76 +1,51 @@
-# Copilot Instructions for Raise The Roof (Continued) Mod Development
+## Raise The Roof (Continued) Mod
 
-## Mod Overview and Purpose
+### Overview
 
-**Raise The Roof (Continued)** is a mod that introduces a variety of robust roof types in RimWorld, enhancing gameplay by offering players options for protection against drop pods, mortars, and tornadoes. These roofs balance the need for defense with other benefits like power generation, adding strategic depth to construction choices within the game.
+Raise The Roof (Continued) is an update of the Machines mod for RimWorld, based on the 1.5 version by Greysuki. The mod allows players to build various types of thick roofs that offer protection against drop pods, mortars, and tornadoes. It also adds the ability to remove overhead mountains through research and provides a variety of options for enabling/disabling auto roof building, power outputs, and roof cost adjustment sliders. The mod is compatible with existing save games and includes performance improvements with solar generating roofs.
 
-## Key Features and Systems
+### Key Features and Systems
 
-- **Various Roof Types:**
-  - **Steel Roof:** Requires 50 steel.
-  - **Solar Roof:** Requires research, 50 steel, 1 component, and provides 50 watts of power.
-  - **Transparent Roof:** Requires research, 50 steel, and 10 synthread.
-  - **Transparent Solar Roof:** Requires research of other roofs, 50 steel, 10 synthread, 1 component, and provides 50 watts of power.
-  
-- **Custom Roof Zoning:** Highlight different roof types with colors:
-  - Orange for Overhead Mountain
-  - Yellow for Thin Rock Roof
-  - Cyan for Constructed Roof
-  - Blue for Constructed Steel Roof
-  - Teal for Constructed Solar Roof
-  - Pink for Constructed Transparent Roof
-  - Purple for Constructed Transparent Solar Roof
+- **Roof Types**: Players can build different types of roofs such as Steel, Solar, Transparent, and Transparent Solar. Each roof type has its own requirements and provides different benefits.
+- **AreaBuildRoof and AreaRemoveRoof Area Zones**: Players can select different roof types and see the colored draw area of all different roof types. They can also select green to build constructed roof area and red to remove constructed roof area.
+- **Option Settings**: Players can enable/disable auto roof building, power outputs, and roof cost adjustment sliders.
+- **Compatibility**: The mod is compatible with existing save games and can be removed without issues.
+- **Performance Improvements**: The mod includes performance improvements with solar generating roofs.
 
-- **Area Management:**
-  - Green for Build Constructed Roof Area
-  - Red for Remove Constructed Roof Area
+### Coding Patterns and Conventions
 
-- **Research Mechanic to Remove Overhead Mountain**
+- **C# Files**: The mod includes 46 C# files, with each file containing a specific Harmony patch or function.
+- **XML Files**: The mod includes 8 XML files, with each file containing specific definitions for ResearchProjectDefs, RoofDefs, ThingDefs, and Patches.
+- **Naming Conventions**: The mod follows standard naming conventions for classes, methods, and variables.
 
-- **Settings for Customization:**
-  - Options to enable/disable auto roof building.
-  - Adjust power outputs and costs of roofs.
+### XML Integration
 
-- **Compatibility Note:** 
-  - Advisable not to use with other roof-building mods due to potential conflicts.
-  - Compatible with existing save games, but it's recommended to remove mod roofs before uninstalling.
+The mod integrates with XML files to define different types of roofs, research projects, and things. The XML files are located in the "Defs" folder and are used to define the properties and behavior of different objects in the game. The mod also includes a "Patches.xml" file that defines the Harmony patches used by the mod.
 
-## Coding Patterns and Conventions
+### Harmony Patching
 
-- The mod employs typical C# OOP patterns, with classes extending base RimWorld functionality:
-  - `Building_SolarArray` and related classes manage new roof functionalities.
-  - Classes in `CompBuildCustomRoof.cs` and `CompRemoveCustomRoof.cs` extend ThingComp to modify roof behaviors.
+The mod uses Harmony for easy detours, allowing for the modification of game code without altering the original codebase. The mod includes several Harmony patches, such as Area_NoRoof_Color, Area_BuildRoof_Color, AutoBuildRoofAreaSetter_TryGenerateAreaNow, DebugToolsGeneral_Kill, and Designator_AreaBuildRoof_SelectedUpdate. These patches modify various aspects of the game, such as roof selection, area zoning, and power generation.
 
-- **Naming Conventions:** Classes and methods follow the PascalCase convention.
+### Suggestions for Copilot
 
-- **Modular Code Structure:** Each file corresponds to a specific aspect of the mod, such as building, comp, patching, and utility classes.
+- **Harmony Patching**: Use Harmony patches to modify game code without altering the original codebase. This can be useful for adding new features or modifying existing behavior.
+- **XML Integration**: Use XML files to define different types of roofs, research projects, and things. This can be useful for adding new objects to the game or modifying existing ones.
+- **Coding Patterns and Conventions**: Follow standard naming conventions for classes, methods, and variables. This can make the code more readable and maintainable.
+- **Performance Improvements**: Consider performance improvements for features such as solar generating roofs. This can make the game run smoother and more efficiently.
+- **Compatibility**: Ensure compatibility with existing save games and other mods. This can prevent issues when players try to remove the mod or install other mods.
 
-## XML Integration
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
 
-- XML files define various configurations, such as research prerequisites, roof costs, and type mappings.
-- Ensure XML tags and attributes are consistent with RimWorld's expected schema.
 
-## Harmony Patching
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+- When mentioning SonarQube issues, automatically use the SonarQube MCP service to fetch and address issues instead of making inferred fixes without querying SonarQube first.
+- When mentioning the rimworld log, automatically use the Rimworld MCP service to fetch the log.
 
-- Extensive use of Harmony for modifying existing game behavior through detours:
-  - `Patches.cs` contains multiple internal static classes for patch functions, hooking into core functionality like construction designations and light overlays.
-
-- **Common Patches:**
-  - `Patch_GlowGrid_GameGlowAt` and `Patch_SectionLayer_LightingOverlay_Regenerate` modify how light interacts with the new roof types.
-  - `Patch_RoofGrid_SetRoof` and `Patch_GenConstruct_CanConstruct` ensure proper roof placement and compatibility checks.
-
-## Suggestions for Copilot
-
-- **Boilerplate Code Generation:**
-  - Use Copilot to draft common patterns like class definitions and method stubs for new features.
-
-- **Code Comments and Documentation:**
-  - Leverage Copilot to add XML comment templates and method annotations for better code readability and maintenance.
-
-- **Harmony Patch Facilitation:**
-  - Suggest potential new patches to enhance compatibility with future RimWorld updates or new gameplay features.
-
-- **Performance Improvements:**
-  - Use Copilot to identify opportunities for optimization, particularly in areas like redundant operations in solar power generation.
-
-Ensure each component of your mod is well-documented, both in code comments and in this instruction file, to aid collaboration and future updates.

@@ -23,16 +23,16 @@ public static class SectionLayer_LightingOverlay_Regenerate
 
     private static CellRect SectRect(SectionLayer_LightingOverlay inst)
     {
-        return (CellRect)fiSectRect.GetValue(inst);
+        return (CellRect)(fiSectRect.GetValue(inst) ?? CellRect.Empty);
     }
 
     private static int FirstCenterInd(SectionLayer_LightingOverlay inst)
     {
-        return (int)fiFirstCenterInd.GetValue(inst);
+        return (int)(fiFirstCenterInd.GetValue(inst) ?? CellRect.Empty);
     }
 
     // Postfix: vanilla already populated mesh colors; adjust only cells under our transparent roofs so they are brighter.
-    private static void Postfix(SectionLayer_LightingOverlay __instance)
+    public static void Postfix(SectionLayer_LightingOverlay __instance)
     {
         var map = Map(__instance);
         if (map == null)
